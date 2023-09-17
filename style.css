@@ -53,7 +53,7 @@ body{
 }
 
 .main-nav .li{
-    background-color: #00A7E1;
+    background-color: #EB5E28;
     transition: all 0.3s;
 }
 
@@ -67,7 +67,7 @@ li{
 
 .main-nav .li:hover{
     color: #F1F5F2;
-    background-color: #48c5ee;
+    background-color: #eb5f28ca;
 }
 
 .main-nav a{
@@ -88,13 +88,18 @@ li{
     top: 0;
 }
 
+/*container*/
+.container{
+    margin: 0 100px;
+}
+
 /*hero*/
 
 .hero{
     padding-top: 20px;
     position: relative;
     height: 700px;
-    margin: 50px 100px;
+    margin: 50px 0;
     overflow-x:visible;
 }
 
@@ -149,7 +154,7 @@ li{
     display: flex;
     gap: 40px;
     padding: 5px;
-    margin: 100px 100px;
+    margin: 100px 0;
     color: #19476a;
     border-top: 5px solid #EB5E28;
     box-shadow: 10px -5px 10px #eb5f28a5;
@@ -203,7 +208,7 @@ li{
     grid-template-rows: 1fr;
     gap: 10px;
     color: #19476a;
-    margin: 0 100px;
+    margin: 0 0;
     margin-bottom: 100px;
     padding-top: 20px;
 }
@@ -420,4 +425,28 @@ footer a{
 .footer-end h5{
     margin: 0;
     color: white;
+}
+
+
+@media only screen and (max-width:600px){
+    .container{
+        margin: 0 20px;
+    }
+
+    .main-nav li{
+        padding: 5px 3px;
+        font-size: 9px;
+    }
+
+    .skill{
+        flex-direction: column;
+    }
+
+    h1,h2,h3,h4,h5,p{
+        font-size: 60%;
+    }
+
+    .title h1{
+        font-size: 30%;
+    }
 }
