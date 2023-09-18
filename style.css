@@ -91,6 +91,7 @@ li{
 /*container*/
 .container{
     margin: 0 100px;
+    overflow: hidden;
 }
 
 /*hero*/
@@ -119,7 +120,7 @@ li{
     color: white;
     position: absolute;
     z-index: 2;
-    width: 550px;
+    width: 100vh;
     top: 50px;
     left: 400px;
 }
@@ -254,7 +255,7 @@ li{
     background-color:#00A7E1;
     background-size: cover;
     background-position: center;
-    background-image: url(Gambar/pilot-2.avif);
+    background-image: url(Gambar/pilot-2.jpg);
 }
 
 .work-def{
@@ -433,6 +434,17 @@ footer a{
         margin: 0 20px;
     }
 
+    .hero-bg{
+        position: absolute;
+        top: 0;
+        left: 50px;
+    }
+
+    .hero-title{
+        left: 55px;
+        max-width: 75%;
+    }
+
     .main-nav li{
         padding: 5px 3px;
         font-size: 9px;
@@ -448,5 +460,13 @@ footer a{
 
     .title h1{
         font-size: 30%;
+    }
+
+    footer .top .fly{
+        font-size: 30px !important; 
+    }
+
+    footer .top, footer .bot{
+        margin-left: 30px;
     }
 }
